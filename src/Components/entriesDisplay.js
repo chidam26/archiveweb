@@ -3,7 +3,7 @@ import {useState, useEffect} from "react"
 import jwt from 'jsonwebtoken'
 import { useNavigate } from 'react-router-dom'
 import UpdateEntry from './updateEntry'
-import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.jpg";
+import logo from "/src/images/logo.jpg";
 
 import TitleIcon from '@material-ui/icons/Title';
 import LinkIcon from '@material-ui/icons/Link';

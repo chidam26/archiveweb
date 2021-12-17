@@ -6,7 +6,7 @@ import TitleIcon from '@material-ui/icons/Title';
 import LinkIcon from '@material-ui/icons/Link';
 import DescriptionIcon from '@material-ui/icons/Description';
 import { TextField, Button } from '@material-ui/core'
-import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.jpg"
+import logo from "/src/images/logo.jpg"
 import PostAddIcon from '@material-ui/icons/PostAdd';
 
 

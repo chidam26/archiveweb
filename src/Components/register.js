@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.jpg"
+import logo from "/src/images/logo.jpg"
 import { Paper, TextField, Button } from '@material-ui/core';
 import { useState } from "react";
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
