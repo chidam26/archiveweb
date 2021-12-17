@@ -10,8 +10,6 @@ import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.j
 import PostAddIcon from '@material-ui/icons/PostAdd';
 
 
-// import { populate } from '../../../server/models/user.model'
-
 function CreateEntry () {
     
     const navigate = useNavigate()
@@ -37,7 +35,7 @@ function CreateEntry () {
 
     const updateArchive = async (e) => {
         e.preventDefault();
-        await fetch('http://localhost:8000/api/entries/create', {
+        await fetch('https://archiveweb.herokuapp.com/api/entries/create', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',
@@ -130,16 +128,6 @@ function CreateEntry () {
         </div>
         </form>
         )
-        
-
-
-        {/* <h1>Your quote: {quote || 'No quote found'}</h1>
-
-        <form onSubmit={updateQuote}>
-            <input type = "text" placeholder="Quote" value = {tempQuote} setValue={e => setTempQuote(e.target.value)}/>
-        </form>
-
-        <input type='submit' value="Update quote"/> */}
 
         </>
     )

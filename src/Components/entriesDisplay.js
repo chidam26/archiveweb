@@ -52,7 +52,7 @@ export default function EntriesDisplay() {
 
     useEffect(function() {
         
-        fetch("http://localhost:8000/api/entries")
+        fetch("https://archiveweb.herokuapp.com/api/entries")
         .then(res => res.json())
         .then((data) => {
             console.log(data);
@@ -88,7 +88,7 @@ export default function EntriesDisplay() {
     }
 
     function handleDelete(e) {
-        fetch(`http://localhost:8000/api/entries/${e.target.name}`,
+        fetch(`https://archiveweb.herokuapp.com/api/entries/${e.target.name}`,
         {method: 'DELETE'});
 
         setEntry((data) => {

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.jpg"
 import { Paper, TextField, Button } from '@material-ui/core';
 import { useState } from "react";
@@ -29,7 +28,7 @@ const Register = () => {
             return setError(`Passwords don't match`)
         }
        
-        const response = await fetch('http://localhost:8000/api/register', {
+        const response = await fetch('https://archiveweb.herokuapp.com/api/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import Register from "./register";
 import logo from "/Users/Chidambaram/Full Stack/Example/client/src/images/logo.jpg";
 import { Paper, TextField, Button } from '@material-ui/core';
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
+
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import LockIcon from '@material-ui/icons/Lock';
+
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom'
 
@@ -22,7 +22,7 @@ function Login() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:8000/api/login', {
+        const response = await fetch('https://archiveweb.herokuapp.com/api/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

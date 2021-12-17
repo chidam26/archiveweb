@@ -13,7 +13,7 @@ export default function UpdateEntry({ _id, handleClose, handleUpdate }) {
 
         console.log({ _id }, { data });
 
-        fetch(`http://localhost:8000/api/entries/${_id}`, data)
+        fetch(`https://archiveweb.herokuapp.com/api/entries/${_id}`, data)
             .then((res) => {
                 setData({ title: "", link:"", description: "" });
                 console.log(res.data.message);
