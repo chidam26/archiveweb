@@ -3,7 +3,7 @@ import {useState, useEffect} from "react"
 import jwt from 'jsonwebtoken'
 import { useNavigate } from 'react-router-dom'
 import UpdateEntry from './updateEntry'
-import logo from "/src/images/logo.jpg";
+// import logo from "/src/images/logo.jpg";
 
 import TitleIcon from '@material-ui/icons/Title';
 import LinkIcon from '@material-ui/icons/Link';
@@ -105,7 +105,7 @@ export default function EntriesDisplay() {
         <>
         <div className='header'>
         <div className='logo'>
-        <img src= {logo}/>
+        {/* <img src= {logo}/> */}
         <h1>WEB Archive</h1>
         </div>
         <Link to ='/login' className='headerlink'>LOGOUT</Link>

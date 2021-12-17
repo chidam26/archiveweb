@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "/src/images/logo.jpg"
+// import logo from "/src/images/logo.jpg"
 import { Paper, TextField, Button } from '@material-ui/core';
 import { useState } from "react";
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
@@ -61,7 +61,7 @@ const Register = () => {
         <>
         <div className='header'>
         <div className='logo'>
-        <img src= {logo}/>
+        {/* <img src= {logo}/> */}
         <h1>WEB Archive</h1>
         </div>
         </div>
